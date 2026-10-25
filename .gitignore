@@ -1,0 +1,37 @@
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+**/application-local.properties
+
+# Frontend dependencies and build files
+
+**/node_modules/
+client/.next/
+client/out/
+
+# Java build files
+
+backend/target/
+**/target/
+*.class
+
+# IDE and operating system
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and local database backups
+
+*.log
+*.dump
+*.bak
+
+# Ignore SQL files by default, but keep the PostgreSQL initialization script
+
+*.sql
+!docker/postgres/init-extensions.sql
+
